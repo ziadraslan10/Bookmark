@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--                    font-icons                         -->
+  <link rel="stylesheet" href="font_Icons/icss/all.min.css">
+  <!--                    Bootstrap                         -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- ONLINE -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--                     Style-Css                          -->
+  <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+
+
+  <div class="py-5  position-relative ">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h1 class="py-2  position-relative ">
+        Bookmarker </h1>
+      <div class="bookmark-form w-100 p-3 py-4 mt-5 gap-4 d-flex flex-column justify-content-center align-items-center">
+        <h2>
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <div class="site-name w-100  d-flex  flex-column justify-content-center ">
+          <label for="siteName" class="my-2"> <i class="fa-solid fa-book-bookmark"></i> Site Name :</label>
+          <input type="text" placeholder="Bookmark Name" class="form-control " id="siteNameInput">
+        </div>
+        <div class="site-url w-100  d-flex  flex-column justify-content-center ">
+          <label for="siteUrl" class="my-2"> <i class="fa-solid fa-link"></i> Site URL :</label>
+          <input type="text" placeholder="Website URL" class="form-control" id="siteUrlInput">
+        </div>
+        <button id="addBtn" onclick="addSite()" class="btn btn-danger px-5">Submit</button>
+      </div>
+      <table class="table text-white text-center my-4">
+        <thead>
+          <th>Index</th>
+          <th>Website Name </th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="Js/index.js"></script>
+</body>
+
+</html>
